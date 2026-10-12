@@ -325,7 +325,6 @@ class GiteaClient:
         headers = {
             "Authorization": f"token {self.token}",
             "Accept": "application/json",
-            "User-Agent": "curl/8.4.0",
         }
         if body is not None:
             data = json.dumps(body).encode("utf-8")
